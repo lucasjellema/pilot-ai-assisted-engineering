@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participant Details</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pilot AI Assisted Engineering</h1>
+        <h2>Participant Details</h2>
+        <a href="index.html" class="back-link">← Back to Overview</a>
+        <div id="navigation">
+            <button id="prev-participant" class="nav-button">← Previous</button>
+            <button id="next-participant" class="nav-button">Next →</button>
+        </div>
+    </header>
+    
+    <main id="participant-details">
+        <section id="basic-info" class="detail-section">
+            <h3>Basic Information</h3>
+            <div class="detail-grid">
+
+                <div class="detail-item">
+                    <h4>Name</h4>
+                    <p id="participant-name"></p>
+                </div>
+                <div class="detail-item">
+                    <h4>Company</h4>
+                    <p id="participant-company"></p>
+                </div>
+                <div class="detail-item">
+                    <h4>Role</h4>
+                    <p id="participant-role"></p>
+                </div>
+                <div class="detail-item">
+                    <h4>Start Time</h4>
+                    <p id="start-time"></p>
+                </div>
+                <div class="detail-item">
+                    <h4>Completion Time</h4>
+                    <p id="completion-time"></p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="technical-info" class="detail-section">
+            <h3>Technical Information</h3>
+            <div class="detail-item full-width">
+                <h4>Daily Engineering Activities</h4>
+                <ul id="activities"></ul>
+            </div>
+            <div class="detail-item full-width">
+                <h4>Technology Stack for Development</h4>
+                <p id="tech-stack"></p>
+            </div>
+            <div class="detail-item full-width">
+                <h4>Supporting Technology Stack</h4>
+                <p id="supporting-tech"></p>
+            </div>
+            <div class="detail-item full-width">
+                <h4>IDE</h4>
+                <p id="ide"></p>
+            </div>
+        </section>
+        
+        <section id="ai-experience-section" class="detail-section">
+            <h3>AI Experience</h3>
+            <div class="detail-item full-width">
+                <h4>Experience with AI Coding Assistants</h4>
+                <p id="ai-experience-text"></p>
+            </div>
+            <div class="detail-item full-width">
+                <h4>Objectives, Priorities and Expectations</h4>
+                <p id="objectives"></p>
+            </div>
+        </section>
+        
+        <section id="participation-info" class="detail-section">
+            <h3>Participation Information</h3>
+            <div class="detail-item">
+                <h4>Track Participation</h4>
+                <p id="track-participation"></p>
+            </div>
+            <div class="detail-item">
+                <h4>Expected Time Commitment</h4>
+                <p id="time-commitment"></p>
+            </div>
+            <div class="detail-item full-width">
+                <h4>Activities to Explore</h4>
+                <ul id="explore-activities"></ul>
+            </div>
+            <div class="detail-item">
+                <h4>Usage Intent</h4>
+                <p id="usage-intent"></p>
+            </div>
+            <div class="detail-item">
+                <h4>Code Base</h4>
+                <p id="code-base"></p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Pilot AI Assisted Engineering - Data Visualization</p>
+    </footer>
+    
+    <script src="js/data.js"></script>
+    <script src="js/detail.js"></script>
+</body>
+</html>

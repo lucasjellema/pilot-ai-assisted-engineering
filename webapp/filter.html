@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Participants</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pilot AI Assisted Engineering</h1>
+        <h2 id="filter-title">Filtered Participants</h2>
+        <a href="index.html" class="back-link">← Back to Overview</a>
+    </header>
+    
+    <main>
+        <section id="filter-info">
+            <h3 id="filter-criteria">Filter Criteria: <span id="filter-value"></span></h3>
+            <p id="filter-description"></p>
+        </section>
+        
+        <section id="filtered-participants">
+            <h3>Matching Participants</h3>
+            <div id="participants-count"></div>
+            <table id="filtered-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Company</th>
+                        <th>Role</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody id="filtered-body"></tbody>
+            </table>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Pilot AI Assisted Engineering - Data Visualization</p>
+    </footer>
+    
+    <script src="js/data.js"></script>
+    <script src="js/filter.js"></script>
+</body>
+</html>

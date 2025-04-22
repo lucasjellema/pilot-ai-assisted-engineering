@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conclusion - Pilot AI Assisted Engineering - Technology</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Conclusion - Pilot AI Assisted Engineering</h1>
+        <h2>Technology</h2>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link">Overview</a>
+            <a href="technology.html" class="nav-link active">Technology</a>
+            <a href="experience.html" class="nav-link">AI Experience</a>
+            <a href="objectives.html" class="nav-link">Objectives & Expectations</a>
+            <a href="feedback.html" class="nav-link">Other Feedback</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="card">
+            <h2>Technology Overview</h2>
+            <div class="tech-overview">
+                <div class="tech-chart-container">
+                    <h3>Most Common Technologies</h3>
+                    <div class="chart-container">
+                        <canvas id="tech-chart"></canvas>
+                    </div>
+                </div>
+                <div class="tech-cloud-container">
+                    <h3>Technology Cloud</h3>
+                    <div id="tech-cloud" class="tech-cloud"></div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="card">
+            <h2>Technology Stacks by Participant</h2>
+            <div class="tabs-container">
+                <div class="tabs">
+                    <button class="tab-button active" data-tab="dev-stack">Development Stack</button>
+                    <button class="tab-button" data-tab="support-stack">Supporting Stack</button>
+                    <button class="tab-button" data-tab="ide">IDEs</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div id="dev-stack" class="tab-pane active">
+                        <h3>Technology Stack for Development</h3>
+                        <div class="scrollable-content" id="dev-stack-content"></div>
+                    </div>
+                    
+                    <div id="support-stack" class="tab-pane">
+                        <h3>Supporting Technology Stack</h3>
+                        <div class="scrollable-content" id="support-stack-content"></div>
+                    </div>
+                    
+                    <div id="ide" class="tab-pane">
+                        <h3>IDEs</h3>
+                        <div class="scrollable-content" id="ide-content"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Pilot AI Assisted Engineering - Data Visualization</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/technology.js"></script>
+</body>
+</html>

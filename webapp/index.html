@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conclusion - Pilot AI Assisted Engineering - Overview</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Conclusion - Pilot AI Assisted Engineering</h1>
+        <h2>Participant Overview</h2>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link active">Overview</a>
+            <a href="technology.html" class="nav-link">Technology</a>
+            <a href="experience.html" class="nav-link">AI Experience</a>
+            <a href="objectives.html" class="nav-link">Objectives & Expectations</a>
+            <a href="feedback.html" class="nav-link">Other Feedback</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="summary-stats">
+            <h3>Summary Statistics</h3>
+            <div id="stats-container" class="grid-container"></div>
+        </section>
+        
+        <section class="card">
+            <h2>Companies</h2>
+            <div class="chart-container-small">
+                <canvas id="companies-chart"></canvas>
+            </div>
+        </section>
+        
+        <section class="card">
+            <h2>Daily Engineering Activities</h2>
+            <div class="chart-container">
+                <canvas id="activities-chart"></canvas>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Activities to Explore</h2>
+            <div class="chart-container">
+                <canvas id="explore-activities-chart"></canvas>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Additional Information</h2>
+            <div class="charts-row">
+                <div class="chart-column">
+                    <h3>Track Participation</h3>
+                    <div class="chart-container-small">
+                        <canvas id="track-participation-chart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-column">
+                    <h3>Usage Intent</h3>
+                    <div class="chart-container-small">
+                        <canvas id="usage-intent-chart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-column">
+                    <h3>Code Base</h3>
+                    <div class="chart-container-small">
+                        <canvas id="code-base-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="card">
+            <h2>Expected Time Commitment</h2>
+            <div class="time-commitment-container">
+                <div class="chart-side">
+                    <h3>Hours per Week</h3>
+                    <div class="chart-container-small">
+                        <canvas id="time-commitment-chart"></canvas>
+                    </div>
+                </div>
+                <div class="list-side">
+                    <h3>Other Responses</h3>
+                    <div class="scrollable-list" id="time-commitment-list"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Key Metrics</h2>
+            <div class="metrics-grid">
+                <div class="metric-item">
+                    <h3>Roles</h3>
+                    <ul id="roles-list" class="clickable-list"></ul>
+                </div>
+                
+                <div id="activities-container" class="metric-container">
+                    <h4>Daily Engineering Activities</h4>
+                    <ul id="activities-list" class="clickable-list"></ul>
+                </div>
+                
+                <div id="tech-stack-container" class="metric-container">
+                    <h4>Technology Stack</h4>
+                    <ul id="tech-stack-list" class="clickable-list"></ul>
+                </div>
+            </div>
+        </section>
+        
+
+        
+        <section class="card">
+            <h2>Development Environment</h2>
+            <div class="metrics-grid">
+                <div id="ide-container" class="metric-container">
+                    <h4>IDEs</h4>
+                    <ul id="ide-list" class="clickable-list"></ul>
+                </div>
+                
+                <div id="ai-assistants-container" class="metric-container">
+                    <h4>AI Coding Assistants</h4>
+                    <ul id="ai-assistants-list" class="clickable-list"></ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="participants-section">
+            <h3>All Participants</h3>
+            <table id="participants-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Company</th>
+                        <th>Role</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody id="participants-body"></tbody>
+            </table>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Pilot AI Assisted Engineering - Data Visualization</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/overview.js"></script>
+</body>
+</html>
