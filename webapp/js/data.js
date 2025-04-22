@@ -1,11 +1,36 @@
 // This file loads and processes the participant data
 
+// Check for data file parameter in URL or use from localStorage
+function getDataFilePath() {
+    // Check URL parameters first
+    const urlParams = new URLSearchParams(window.location.search);
+    const dataFileParam = urlParams.get('parDataFile');
+    
+    if (dataFileParam) {
+        // If parameter is in URL, save it to localStorage for persistence across navigation
+        localStorage.setItem('parDataFile', dataFileParam);
+        return dataFileParam;
+    } else {
+        // If not in URL, check if we have a saved value in localStorage
+        const savedDataFile = localStorage.getItem('parDataFile');
+        if (savedDataFile) {
+            return savedDataFile;
+        }
+    }
+    
+    // Default path if no parameter is specified
+    return '../data/Baseline_Measurement_PilotAIAssistedSoftwareEngineering.json';
+}
+
 // Function to load the JSON data
 async function loadParticipantData() {
     try {
-        const response = await fetch('../data/Baseline_Measurement_PilotAIAssistedSoftwareEngineering.json');
+        const dataFilePath = getDataFilePath();
+        console.log(`Loading data from: ${dataFilePath}`);
+        
+        const response = await fetch(dataFilePath);
         if (!response.ok) {
-            throw new Error('Failed to load participant data');
+            throw new Error(`Failed to load participant data from ${dataFilePath}`);
         }
         const data = await response.json();
         return data;
